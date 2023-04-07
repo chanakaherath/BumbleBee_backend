@@ -101,7 +101,7 @@ public class BrandServiceImplementation implements BrandService {
 
                 brand.setName(updateRequest.getName());
                 brand.setDescription(updateRequest.getDescription());
-                brand.setStatus(updateRequest.getStatus());
+                brand.setStatus(Status.ACTIVE);
                 brand.setIsDeleted(Deleted.NO);
 
                 updateResponse = brandRepository.save(brand);

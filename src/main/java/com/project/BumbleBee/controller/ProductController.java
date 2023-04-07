@@ -4,6 +4,7 @@ import com.project.BumbleBee.dto.request.ProductSaveRequest;
 import com.project.BumbleBee.dto.request.ProductUpdateRequest;
 import com.project.BumbleBee.dto.response.ProductResponse;
 import com.project.BumbleBee.service.ProductService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,6 +13,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("product")
+@Api(tags = "Product Controller")
+@CrossOrigin(origins = "http://localhost:4200")
 public class ProductController {
 
     @Autowired

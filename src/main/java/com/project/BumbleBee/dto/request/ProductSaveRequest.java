@@ -8,7 +8,7 @@ public class ProductSaveRequest {
 
     private String description;
 
-    private Double price;
+    private String price;
 
     private String brandId;
 
@@ -41,11 +41,11 @@ public class ProductSaveRequest {
         this.description = description;
     }
 
-    public Double getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(Double price) {
+    public void setPrice(String price) {
         this.price = price;
     }
 

@@ -42,7 +42,7 @@ public class ProductServiceImplementation implements ProductService {
             product.setName(saveRequest.getName());
             product.setCode(saveRequest.getCode());
             product.setDescription(saveRequest.getDescription());
-            product.setPrice(saveRequest.getPrice());
+            product.setPrice(Double.parseDouble(saveRequest.getPrice()));
             product.setStatus(Status.ACTIVE);
             product.setIsDeleted(Deleted.NO);
             product.setBrand(brandRepository.getById(saveRequest.getBrandId()));
@@ -149,8 +149,8 @@ public class ProductServiceImplementation implements ProductService {
                 product.setName(updateRequest.getName());
                 product.setCode(updateRequest.getCode());
                 product.setDescription(updateRequest.getDescription());
-                product.setPrice(updateRequest.getPrice());
-                product.setStatus(updateRequest.getStatus());
+                product.setPrice(Double.parseDouble(updateRequest.getPrice()));
+                product.setStatus(Status.ACTIVE);
                 product.setIsDeleted(Deleted.NO);
                 product.setBrand(brandRepository.getById(updateRequest.getBrandId()));
                 product.setCategory(categoryRepository.getById(updateRequest.getCategoryId()));
@@ -215,7 +215,7 @@ public class ProductServiceImplementation implements ProductService {
         response.setName(product.getName());
         response.setCode(product.getCode());
         response.setDescription(product.getDescription());
-        response.setPrice(product.getPrice());
+        response.setPrice(String.valueOf(product.getPrice()));
         response.setStatus(product.getStatus());
         response.setIsDeleted(product.getIsDeleted());
         response.setBrand(convertToBrandResponse(product.getBrand()));

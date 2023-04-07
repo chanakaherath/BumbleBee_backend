@@ -4,6 +4,7 @@ import com.project.BumbleBee.dto.request.BrandSaveRequest;
 import com.project.BumbleBee.dto.request.BrandUpdateRequest;
 import com.project.BumbleBee.dto.response.BrandResponse;
 import com.project.BumbleBee.service.BrandService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,6 +13,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("brand")
+@Api(tags = "Brand Controller")
+@CrossOrigin(origins = "http://localhost:4200")
 public class BrandController {
 
     @Autowired

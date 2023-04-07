@@ -4,6 +4,7 @@ import com.project.BumbleBee.dto.request.CategorySaveRequest;
 import com.project.BumbleBee.dto.request.CategoryUpdateRequest;
 import com.project.BumbleBee.dto.response.CategoryResponse;
 import com.project.BumbleBee.service.CategoryService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -12,6 +13,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("category")
+@Api(tags = "Category Controller")
+@CrossOrigin(origins = "http://localhost:4200")
 public class CategoryController {
 
     @Autowired

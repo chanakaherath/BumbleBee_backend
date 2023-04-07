@@ -102,7 +102,7 @@ public class CategoryServiceImplementation implements CategoryService {
 
                 category.setName(updateRequest.getName());
                 category.setCode(updateRequest.getCode());
-                category.setStatus(updateRequest.getStatus());
+                category.setStatus(Status.ACTIVE);
                 category.setIsDeleted(Deleted.NO);
 
                 updateResponse = categoryRepository.save(category);

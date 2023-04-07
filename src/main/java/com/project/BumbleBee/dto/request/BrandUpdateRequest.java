@@ -10,8 +10,6 @@ public class BrandUpdateRequest {
 
     private String description;
 
-    private Status status;
-
 
 
     // Getters & Setters
@@ -37,13 +35,5 @@ public class BrandUpdateRequest {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public Status getStatus() {
-        return status;
-    }
-
-    public void setStatus(Status status) {
-        this.status = status;
     }
 }

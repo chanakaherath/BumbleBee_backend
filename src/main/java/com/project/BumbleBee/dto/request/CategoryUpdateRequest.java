@@ -10,8 +10,6 @@ public class CategoryUpdateRequest {
 
     private String code;
 
-    private Status status;
-
 
 
     // Getters & Setters
@@ -37,13 +35,5 @@ public class CategoryUpdateRequest {
 
     public void setCode(String code) {
         this.code = code;
-    }
-
-    public Status getStatus() {
-        return status;
-    }
-
-    public void setStatus(Status status) {
-        this.status = status;
     }
 }

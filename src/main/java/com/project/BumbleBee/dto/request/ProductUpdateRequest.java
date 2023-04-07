@@ -12,9 +12,7 @@ public class ProductUpdateRequest {
 
     private String description;
 
-    private Double price;
-
-    private Status status;
+    private String price;
 
     private String brandId;
 
@@ -55,20 +53,12 @@ public class ProductUpdateRequest {
         this.description = description;
     }
 
-    public Double getPrice() {
+    public String getPrice() {
         return price;
     }
 
-    public void setPrice(Double price) {
+    public void setPrice(String price) {
         this.price = price;
-    }
-
-    public Status getStatus() {
-        return status;
-    }
-
-    public void setStatus(Status status) {
-        this.status = status;
     }
 
     public String getBrandId() {
