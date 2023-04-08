@@ -29,7 +29,7 @@ public class Product {
     @Column(name = "NAME", length = 50, nullable = false)
     private String name;
 
-    @Column(name = "CODE", length = 10, nullable = false)
+    @Column(name = "CODE", nullable = false)
     private String code;
 
     @Column(name = "DESCRIPTION")
